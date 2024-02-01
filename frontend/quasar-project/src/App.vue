@@ -1,11 +1,17 @@
 <template>
-  <router-view />
+  <div>
+    <router-view />
+    <MainLayout />
+  </div>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import MainLayout from 'layouts/MainLayout.vue';
 
-export default defineComponent({
-  name: 'App'
-})
+export default {
+  name: 'App',
+  components: {
+    MainLayout,
+  },
+};
 </script>
